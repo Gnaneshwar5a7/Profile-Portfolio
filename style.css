@@ -1,0 +1,472 @@
+/* Header Section(Navigation Bar) */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu' sans-serif;
+}
+html{
+    display: flex;
+    flex-direction: row;
+    background-color: #010438;
+}
+header {
+    background: rgb(14, 19, 72);
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+    top: 0px;
+    position: fixed;
+    width:100vw;
+}
+
+.nav bar {
+    background: rgb(14, 19, 72);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    transition: all 0.5s ease 0s;
+}
+
+header nav {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav div {
+    width: 80%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.bi {
+    padding: 0px 5px;
+}
+
+header nav ul li {
+    padding: 0px 20px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li button {
+    background: rgb(14, 19, 72);
+    color: white;
+    height: inherit;
+    width: 50px;
+    border: none;
+}
+header nav ul li button:hover{
+    color: gray;
+}
+
+#div1 {
+    display: none;
+    width: 12vw;
+    height: 9vh;
+    align-items: center;
+}
+
+#menu1 {
+    padding: 2px;
+    margin: 5px;
+    height: 35px;
+    width: 45px;
+    border: 0px;
+    background: rgb(14, 19, 72);
+    color: white;
+}
+
+#lines1 {
+    background: rgb(14, 19, 72);
+}
+
+.menu {
+    height: 40vh;
+    display: none;
+    justify-content: 10vh;
+}
+
+.b1 {
+    background: rgb(14, 19, 72);
+    color: gray;
+    height: 7vh;
+    width: 100vw;
+    border: none;
+    display: flex;
+    align-content: flex-start;
+    padding: 15px 0;
+}
+
+
+
+/* DashBoard Page*/
+
+main{
+    width: 100vw;
+    height: 99vh;
+}
+.background {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+.foreground {
+    background-color: #010438;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded {
+    height: 150px;
+    width: 150px;
+    border-radius: 50% !important;
+    border: 2px solid rgb(19, 89, 239);
+    display: flex;
+    z-index: 1;
+}
+
+
+
+.wrapper {
+    background-color: #010438;
+    display: flex;
+}
+
+.wrapper .static-txt {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+    font-family: 'Ubuntu', sanserifs-;
+}
+
+
+.wrapper .dynamic-txts {
+    margin-top: 20px;
+    margin-left: 13px;
+    line-height: 60px;
+    height: 60px;
+    background-color: #010438;
+    overflow: hidden;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+}
+
+.dynamic-txts li {
+    z-index: 0;
+    list-style: none;
+    color: white;
+    
+    font-weight: 400;
+    top: 0;
+    position: relative;
+    animation: slide 20s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -240px;
+    }
+}
+
+.dynamic-txts li {
+    position: relative;
+}
+
+
+.dynamic-txts li::after {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010438;
+    border-left: 3px solid white;
+    animation: typing 5s steps(17) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100%);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.links {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.links li {
+    margin: 1vw;
+    list-style: none;
+}
+
+.links li button {
+    border: 2px solid aqua;
+    border-radius: 30px;
+    width: 23vw;
+    height: 5vh;
+    color: white;
+    font-size: 2.4vh;
+    background-color: #010438;
+}
+.b:hover{
+    color: black;
+    background-color: aqua;
+}
+
+
+
+
+
+/* About Page */
+.info {
+    background-color: #010438;
+    width: 80vw;
+    padding-left: 50px;
+    color: white;
+    display: none;
+    font-family: sans-serif;
+}
+
+#wishing {
+    padding-top: 20px;
+    color: aqua;
+    font-size: x-large;
+}
+
+#name {
+    color: white;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+#profession {
+    color: white;
+    padding-top: 5px;
+    font-size: xx-large;
+}
+
+#p1 {
+    color: white;
+    padding-top: 25px;
+    padding-right: 5px;
+    font-size: larger;
+}
+
+.Contact {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+#contact:hover{
+    background-color:#171a49;
+}
+
+#contact {
+    background-color: #010438;
+    color: aqua;
+    width: 150px;
+    height: 40px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.about {
+    color: antiquewhite;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.edu {
+    font-size: larger;
+    padding-top: 15px;
+}
+
+.tech {
+    font-size: larger;
+    padding-top: 30px;
+}
+
+.techs {
+    font-size: larger;
+    padding-top: 30px;
+}
+.list{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.list li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.list li:hover{
+    color: aqua;
+}
+
+
+/* Projects list */
+
+.projects{
+    display: none;
+    padding-top: 30px;
+}
+.title{
+    color: white;
+    font-size: xx-large;
+    padding: 20px;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+#portfolio a{
+    align-self: center;
+    height: fit-content;
+    text-decoration: none;
+}
+#portfolio a img{
+    height: 300px;
+    width: 55vw;
+    opacity: 0.5;
+}
+.project_info{
+    padding-left: 20px;
+    font-size:x-large;
+    color: rgb(29, 222, 229);
+    position: relative;
+    top: -280px;
+    list-style: inside;
+}
+
+/* footer of the page */
+.footer {
+    background-color:rgb(14, 19, 72);
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-bottom: 10px;
+    width: 100vw;
+}
+#footer1{
+    display: flex;
+}
+.contactinfo{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.contactinfo p{
+    font-size: larger;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: aqua;
+}
+.contactinfo a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.contactinfo a svg{
+    position: relative;
+    top: 2px;
+}
+.college img{
+    padding-left: 50px;
+    height: 50px;
+}
+.inforamation{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.inforamation p{ 
+    font-size: larger;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: aqua;
+}
+.inforamation ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.inforamation ul li{
+    padding-bottom: 5px;
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+.Programming{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.Programming p{
+    font-size:larger;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: aqua;
+}
+.Programming ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.Programming ul li{
+    padding-bottom: 5px;
+}
+
+.Social{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.Social p{
+    font-size:larger;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: aqua;
+}
+.Social ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.Social ul li{
+    padding-bottom: 5px;
+}

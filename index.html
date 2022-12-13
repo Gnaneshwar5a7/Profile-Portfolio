@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnenshwar Sindhe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <img src="logo.png" alt="...">
+                <div></div>
+                <ul id="menu">
+                    <li><button id="b1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+                            </svg>DashBoard</button></li>
+                    <li><button id="b2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                                <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>About</button></li>
+                    <li><button id="b3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-keyboard" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z" />
+                                <path
+                                    d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z" />
+                            </svg>Work</button></li>
+                    <li><a href="mailto:sindhegnaneshwar2003@gmail.com"><button id="b4"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                                </svg>Contact</button></a></li>
+                    <li><a href="Gnaneshwar Sindhe.pdf"><button id="b5"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-file-earmark"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                                </svg>Resume</button></a></li>
+                </ul>
+                <div id="div1">
+                    <button id="menu1" onclick="menuList()">
+                        <svg id="lines1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg></button>
+                </div>
+            </nav>
+        </div>
+        <div class="menu" id="menulist">
+            <ul>
+                <li><button id="b6" class="b1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                            <path fill-rule="evenodd"
+                                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+                        </svg><b>DashBoard</b></button></li>
+                <li><button id="b7" class="b1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                            <path
+                                d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg><b>About</b></button></li>
+                <li><button id="b8" class="b1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-keyboard" viewBox="0 0 16 16">
+                            <path
+                                d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z" />
+                        </svg><b>Work</b></button></li>
+                <li><button id="b9" class="b1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                        </svg><b>Contact</b></button></li>
+                <li><a class="links" href="Gnaneshwar Sindhe.pdf" style="text-decoration: none;"><button id="b10" class="b1"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-file-earmark" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                            </svg><b>Resume</b></button></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="background"><canvas></canvas></div>
+        <div class="foreground">
+            <img class="rounded" src="profile.jpg" alt="....">
+            <div class="wrapper">
+                <div class="static-txt">I'm </div>
+                <ul class="dynamic-txts">
+                    <li><span>Web Developer</span></li>
+                    <li><span>Python Developer</span></li>
+                    <li><span>Java Developer</span></li>
+                    <li><span>Creative Designer</span></li>
+                </ul>
+            </div>
+            <ul class='links'>
+                <li><a href="https://github.com/Gnaneshwar5a7"><button id='button1' class="b">Github</button></a></li>
+                <li><a href="https://www.linkedin.com/in/gnaneshwar-sindhe-4b3166226"><button id='button2'
+                            class="b">LinkedIn</button></a></li>
+                <li><a href="Gnaneshwar Sindhe.pdf"><button id='button3' class="b">Resume</button></a></li>
+                <li><a href="mailto:sindhegnaneshwar2003@gmail.com"><button id='button4' class="b">Contact</button></a>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="Intro">
+                <p id="wishing">Hello, My name is</p>
+                <p id="name"><b>Gnaneshwar Sindhe</b></p>
+                <p id="profession"><b>I'm a Student of Computer Science</b></p>
+                <p id="p1">A Tech enthusiast with a keen interest in Software Development and Web Development. Also
+                    intersted in Artificial Intellligence and Machine Learning.</p>
+            </div>
+            <div class="Contact"><a href="mailto:sindhegnaneshwar2003@gmail.com"><button id="contact">Say,
+                        HI</button></a>
+            </div>
+            <div class="about">
+                <b>About Me</b>
+            </div>
+            <p class="edu">Hello! I'm a student of Computer science and Engineering, passionate about learning and
+                exploring
+                technology, CMR Institute Of Technology. </p>
+            <p class="tech">A Web developer with strong grip on basic front-end development tools including HTML,CSS,
+                Bootstrap, Javascript along with a basic Knowledge about back-end development frameworks PHP, Django.
+                Having
+                excellent communication skills and Leading skills. I being working on interesting and good projects.</p>
+            <p class="techs">Here are a few technologies I've been working with recently: </p>
+            <div style="display: flex;">
+                <ul class="list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C/C++</li>
+                    <li>MySQL</li>
+                </ul>
+                <ul class="list">
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>ReactJS</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="portfolio" id="portfolio">
+                <div class="title">1. Portfolio Profile</div>
+                <a href="index.html">
+                    <img src="logo.png">
+                    <div class="project_info">Portfolio project</div>
+                    <ul class="project_info">
+                        <li>Personal Information</li>
+                        <li>Profesional Information</li>
+                        <li>Contact Information</li>
+                    </ul>
+                </a>
+
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <img src="logo.png">
+        <div id="footer1">
+        <div class="contactinfo">
+            <p>Contacts</p>
+            <a href="mailto:sindhegnaneshwar2003@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg> sindhegnaneshwar2003@gmail.com</a>
+            <a href="mailto:20r01a05a7@cmritonline.ac.in"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg> 20r01a05a7@cmritonline.ac.in</a>
+        </div>
+        <div class="inforamation">
+            <p>Information</p>
+            <ul>
+                <li onclick="f22()">About me</li>
+                <li onclick="f33()">Projects</li>
+                <li><a href="Gnaneshwar Sindhe.pdf" class="links">Resume</a></li>
+                <li><a class="links" href="https://github.com/Gnaneshwar5a7">Github</a></li>
+            </ul>
+        </div>
+        <div class="Programming">
+            <p>Coding Platforms</p>
+            <ul>
+                <li><a class="links" href="https://www.hackerrank.com/20r01a05a7?hr_r=1">Hackerrank</a></li>
+                <li><a class="links" href="https://www.codechef.com/users/g_20r01a05a7">Codechef</a></li>
+                <li><a class="links" href="https://vjudge.net/user/20R01A05A7">Vjudge</a></li>
+                <li><a class="links" href="https://leetcode.com/20R01A05A7/">Leetcode</a></li>
+                <li><a class="links" href="https://auth.geeksforgeeks.org/user/20r01a05a7/">Geeksforgeeks</a></li>
+            </ul>
+        </div>
+        <div class="Social">
+            <p>Social Media</p>
+            <ul>
+                <li><a class="links" href="https://www.linkedin.com/in/gnaneshwar-sindhe-4b3166226">LinkedIn</a></li>
+                <li><a class="links" href="https://www.facebook.com/sindhe.gnaneshwar.5">Facebook</a></li>
+                <li><a class="links" href="https://www.instgram.com/sindhe.gnaneshwar">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    <script src="canvas.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
