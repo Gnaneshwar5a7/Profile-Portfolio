@@ -363,6 +363,7 @@ canvas {
 #portfolio a img{
     height: 300px;
     width: 55vw;
+    min-width: 500px;
     opacity: 0.5;
 }
 .project_info{
@@ -377,7 +378,6 @@ canvas {
 /* footer of the page */
 .footer {
     background-color:rgb(14, 19, 72);
-    position: relative;
     z-index: 1;
     color: white;
     padding-bottom: 10px;
