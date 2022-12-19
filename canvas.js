@@ -1,6 +1,6 @@
 var canvas = document.querySelector('canvas');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = document.body.clientWidth;
+canvas.height = document.body.clientHeight;
 var c = canvas.getContext('2d');
 
 
@@ -17,8 +17,8 @@ var colorArray = ['#66ff66', '#88B04B', '#6B5B95', '#FF6F61', '#34568B', '#ffaa3
 
 
 window.addEventListener('resize', function () {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = document.body.clientWidth;
+    canvas.height = document.body.clientHeight;
     init();
 })
 window.addEventListener('load', function () {
@@ -68,12 +68,13 @@ for (var i = 0; i < 4000; i++) {
     circleArray.push(new Circle(x, y, dx, dy, r));
 }
 function init() {
-
     var menu = document.getElementById('menu');
     var div1 = document.getElementById('div1');
     var b = document.getElementsByClassName('b');
     var footer = document.getElementById('footer1');
-    if (document.body.clientWidth <= 800) {
+    if (document.body.clientWidth <= 900) {
+        canvas.width = document.body.clientWidth;
+        canvas.height = document.body.clientHeight;
         for (i = 0; i < 4; i++) {
             b[i].style.width = '23vw';
         }
