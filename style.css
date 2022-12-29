@@ -364,20 +364,20 @@ canvas {
     padding: 20px;
 }
 
-#portfolio {
+#project {
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
 }
 
-#portfolio a {
+#project a {
     align-self: center;
     height: fit-content;
     text-decoration: none;
 }
 
-#portfolio a img {
+#project a img {
     height: 300px;
     width: 55vw;
     min-width: 500px;
