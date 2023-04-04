@@ -518,6 +518,7 @@ canvas {
 }
 
 .container {
+    padding: 20px;
     margin: 10px;
     background-color:#171a49;
     width: 80vw;
@@ -528,7 +529,7 @@ canvas {
 }
 
 .container img {
-    padding: 30px;
+    padding: 20px;
     width: 70vw;
     height: 80vw;
     overflow: hidden;
