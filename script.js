@@ -21,6 +21,7 @@
     var Ab = document.getElementsByClassName("info")[0];
     var main = document.getElementsByTagName('main')[0];
     var projects = document.getElementsByClassName('projects')[0];
+    var cert=document.getElementsByClassName('certifications')[0];
 }
 
 
@@ -94,6 +95,7 @@ function f11() {
     main.style.paddingTop = '0vh';
     projects.style.display = 'none';
     menu1.style.display = 'none';
+    cert.style.display='none';
 
 }
 b2.addEventListener('click', function () {
@@ -106,6 +108,7 @@ function f22() {
     projects.style.display = 'none';
     main.style.paddingTop = '9vh';
     menu1.style.display = 'none';
+    cert.style.display='none';
 }
 b3.addEventListener('click', function () {
     f33();
@@ -118,21 +121,28 @@ function f33() {
     projects.style.display = 'block';
     main.style.paddingTop = '9vh';
     menu1.style.display = 'none';
+    cert.style.display='none';
 }
 b4.addEventListener('click', function () {
     f44();
 })
 
 function f44() {
-    console.log('hello');
+    fg.style.display = "none";
+    bg.style.display = "none";
+    Ab.style.display = "none";
+    projects.style.display = 'none';
+    main.style.paddingTop = '9vh';
+    menu1.style.display = 'none';
+    cert.style.display='block';
 }
-b5.addEventListener('click', function () {
-    f55();
-})
+// b5.addEventListener('click', function () {
+//     f55();
+// })
 
-function f55() {
-    console.log('hello');
-}
+// function f55() {
+//     console.log('hello');
+// }
 
 
 b6.addEventListener('click', function () {
@@ -145,4 +155,7 @@ b7.addEventListener('click', function () {
 
 b8.addEventListener('click', function () {
     f33();
+})
+b9.addEventListener('click',function(){
+    f44();
 })
