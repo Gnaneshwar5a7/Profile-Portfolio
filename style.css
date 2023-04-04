@@ -521,7 +521,7 @@ canvas {
     margin: 10px;
     background-color:#171a49;
     width: 80vw;
-    height: 90vh;
+    height: 90vw;
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -530,7 +530,7 @@ canvas {
 .container img {
     padding: 30px;
     width: 70vw;
-    height: 80vh;
+    height: 80vw;
     overflow: hidden;
 }
 
@@ -549,5 +549,5 @@ canvas {
 .horizontal a img {
     padding: 30px;
     width: 40vw;
-    height: 40vh;
+    height: 40vw;
 }
