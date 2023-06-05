@@ -3,17 +3,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu' sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html {
     display: flex;
     flex-direction: row;
-    background-color: #010438;
+    background: radial-gradient(#010438,black);
 }
 
 header {
-    background: rgb(14, 19, 72);
+    background: rgb(2, 4, 39);
     z-index: 2;
     opacity: 1;
     transition: all 0.5s ease 0s;
@@ -23,7 +23,7 @@ header {
 }
 
 .nav bar {
-    background: rgb(14, 19, 72);
+    background: transparent;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -57,10 +57,15 @@ header nav ul li {
     flex-direction: row;
     list-style: none;
     align-items: center;
+    /* color: white; */
 }
 
+header nav ul li:hover{
+    border-radius: 20px;
+    background: radial-gradient(black,white);
+}
 header nav ul li button {
-    background: rgb(14, 19, 72);
+    background: transparent;
     color: white;
     height: inherit;
     width: 50px;
@@ -68,7 +73,8 @@ header nav ul li button {
 }
 
 header nav ul li button:hover {
-    color: gray;
+    color:aqua;
+    cursor: pointer;
 }
 
 #div1 {
@@ -84,15 +90,17 @@ header nav ul li button:hover {
     height: 35px;
     width: 45px;
     border: 0px;
-    background: rgb(14, 19, 72);
+    background: transparent;
     color: white;
 }
 
 #lines1 {
-    background: rgb(14, 19, 72);
+    background: transparent;
+
 }
 
 .menu {
+    background: transparent;
     height: fit-content;
     display: none;
     justify-content: 10vh;
@@ -103,10 +111,10 @@ header nav ul li button:hover {
 }
 
 .b1 {
-    background: rgb(14, 19, 72);
+    background: transparent;
     color: gray;
     height: 40px;
-    width: 100vw;
+    width: 98vw;
     border-radius: 20px;
     display: flex;
     margin-top: 10px;
@@ -134,7 +142,7 @@ canvas {
 }
 
 .foreground {
-    background-color: #010438;
+    background: transparent;
     width: 100vw;
     padding-top: 20vh;
     background-position: center;
@@ -151,15 +159,17 @@ canvas {
     height: 140px;
     width: 140px;
     border-radius: 50% !important;
-    border: 2px solid rgb(19, 89, 239);
+    border: 2px solid rgb(2, 19, 57);
     display: flex;
     z-index: 1;
 }
 
-
+.rounded:hover{
+    box-shadow: 0px 0px 100px 0.5px rgb(5, 75, 225);
+}
 
 .wrapper {
-    background-color: #010438;
+    background:transparent;
     display: flex;
 }
 
@@ -169,19 +179,18 @@ canvas {
     font-size: 30px;
     font-weight: 400;
     line-height: 60px;
-    font-family: 'Ubuntu', sanserifs-;
     z-index: 0;
 }
 
 
 .wrapper .dynamic-txts {
-    margin-top: 20px;
+    position: relative;
     margin-left: 13px;
-    line-height: 60px;
-    height: 60px;
-    background-color: #010438;
+    line-height: 40px;
+    top: 30px;
+    height: 40px;
+    background: transparent;
     overflow: hidden;
-    font-family: 'Ubuntu';
     font-size: 30px;
     z-index: 0;
 }
@@ -199,7 +208,7 @@ canvas {
 
 @keyframes slide {
     100% {
-        top: -240px;
+        top: -160px;
     }
 }
 
@@ -215,7 +224,7 @@ canvas {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #010438;
+    background: radial-gradient(circle at bottom left,#010330,#010129);
     border-left: 3px solid white;
     animation: typing 5s steps(17) infinite;
 }
@@ -250,28 +259,34 @@ canvas {
     height: 5vh;
     color: white;
     font-size: 2.4vh;
-    background-color: #010438;
+    background: radial-gradient(#010438,black);
 }
 
 .b:hover {
     color: black;
-    background-color: aqua;
+    background:radial-gradient(white,aqua);
+    box-shadow: 0px 0px 25px 1px aqua;
+    cursor: pointer;
 }
-
-
-
 
 
 /* About Page */
 .info {
-    background-color: #010438;
-    padding-left: 50px;
+    /* background-color: #010438; */
+    background: transparent;
+    /* padding:0px 8%; */
     color: white;
     display: none;
-    font-family: sans-serif;
     margin-bottom: 50px;
 }
 
+.Intro{
+    border:2px aqua solid;
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 10px 100px 100px 10px;
+}
 #wishing {
     padding-top: 20px;
     color: aqua;
@@ -285,29 +300,37 @@ canvas {
 }
 
 #profession {
+    display: inline;
     color: white;
     padding-top: 5px;
-    font-size: xx-large;
+    font-size: x-large;
+}
+#profession span{
+    font-size: large;
+    display: inline;
 }
 
 #p1 {
     color: white;
     padding-top: 25px;
-    padding-right: 5px;
-    font-size: larger;
+    padding-right: 10px;
+    font-size: large;
 }
 
 .Contact {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 20px;
 }
 
 #contact:hover {
-    background-color: #171a49;
+    color: black;
+    background:radial-gradient(white,aqua);
+    box-shadow: 0px 0px 25px 1px aqua;
+    cursor: pointer;
 }
 
 #contact {
-    background-color: #010438;
+    background: radial-gradient(#010438,black);
     color: aqua;
     width: 150px;
     height: 40px;
@@ -316,40 +339,75 @@ canvas {
     font-size: 18px;
 }
 
+.about-tmp{
+    border: 2px aqua solid;
+    padding:20px;
+    margin: 10px;
+    margin-top: 20px;
+    
+}
 .about {
     color: antiquewhite;
-    padding-top: 30px;
+    padding-top: 10px;
     font-size: xx-large;
 }
 
 .edu {
-    font-size: larger;
-    padding-top: 15px;
+    font-size: large;
+    padding-top: 10px;
 }
 
 .tech {
-    font-size: larger;
-    padding-top: 30px;
-}
-
-.techs {
-    font-size: larger;
-    padding-top: 30px;
-}
-
-.list {
+    font-size: large;
     padding-top: 10px;
-    padding-left: 50px;
+}
+
+/* .techs {
+    font-size: larger;
+    padding-top: 30px;
+} */
+
+.t{
+    border: 2px aqua solid;
+    margin: 10px;
+}
+.t p{
+    padding: 20px;
+}
+.techs{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.list {
+    padding: 10px 3%;
 }
 
 .list li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    list-style: none;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+/* .list li svg{
+    position: relative;
+    right:-140px;
+} */
+
+.skill{
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    border: 2px aqua solid;
+    width: 30px;
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
-.list li:hover {
-    color: aqua;
-}
 
 
 /* Projects list */
@@ -362,9 +420,14 @@ canvas {
 .title {
     color: white;
     font-size: xx-large;
-    padding: 20px;
+    padding: 10px 30px;
 }
 
+.project{
+    border: 2px aqua solid;
+    padding: 10px;
+    margin: 10px;
+}
 #project {
     display: flex;
     flex-direction: column;
@@ -374,34 +437,43 @@ canvas {
 
 #project a {
     align-self: center;
-    height: fit-content;
+    height: 320px;
     text-decoration: none;
+    color: aqua;
+
 }
 
 #project a img {
     height: 300px;
     width: 55vw;
-    min-width: 500px;
+    min-width: 400px;
     opacity: 0.5;
 }
 
 .project_info {
     padding-left: 20px;
     font-size: x-large;
-    color: rgb(29, 222, 229);
     position: relative;
     top: -280px;
     list-style: inside;
 }
 
+.prj:hover{
+    position: relative;
+    top: -2px;
+    box-shadow: 0px 0px 25px 1px aqua;
+}
+
 /* footer of the page */
 .footer {
     width: 100vw;
-    background-color: rgb(14, 19, 72);
+    /* background: rgb(2, 4, 39); */
+    background: radial-gradient(cirle at top,rgb(13, 14, 43),black);
     position: relative;
     z-index: 1;
     color: white;
     bottom: 0%;
+    border-top: 1px black solid;
 }
 
 #footer1 {
@@ -523,31 +595,41 @@ canvas {
     padding-right: 35px;
     margin: 10px;
     background-color:#171a49;
-    width: 75vw;
-    height: 70vw;
+    width: 70vw;
+height: 50vw;
     overflow-x: hidden;
     overflow-y: auto;
     border-radius: 5vw;
 }
 
+
 .container a img {
     padding: 20px;
-    width: 70vw;
-    height: 50vw;
+    width: 60vw;
+height: 45vw;
     overflow: hidden;
     border-radius: 15%;
 }
+
 
 .certificates {
     padding: 20px;
     margin: 20px;
     border: #171a49 solid 1px;
+    background: transparent;
+}
+
+.certificates h3{
+    padding: 5px;
 }
 
 .horizontal {
     position: relative;
     overflow-x: auto;
     display: flex;
+    border:1px aqua solid;
+    margin: 5px;
+    border-radius: 20px;
 }
 
 .horizontal a img {
@@ -555,4 +637,8 @@ canvas {
     width: 30vw;
     height: 30vw;
     border-radius: 15%;
+}
+
+.horizontal a img:hover{
+    box-shadow: 3px 3px 2px 2px aqua;
 }
