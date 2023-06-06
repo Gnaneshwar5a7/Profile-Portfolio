@@ -407,6 +407,7 @@ canvas {
     border: 2px aqua solid;
     width: 5%;
     min-width:9px;
+    margin-left: 1%;
     margin-bottom: 10px;
 }
 
