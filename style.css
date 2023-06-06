@@ -406,7 +406,7 @@ canvas {
     top: 20px;
     border: 2px aqua solid;
     width: 5%;
-    min-width:25px;
+    min-width:12px;
     margin-right: 5px;
     margin-bottom: 10px;
 }
