@@ -449,9 +449,9 @@ canvas {
 }
 
 #project a img {
-    height: 250px;
+    height: 225px;
     width: 55vw;
-    min-width: 300px;
+    min-width: 250px;
     opacity: 0.5;
 }
 
