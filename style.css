@@ -451,7 +451,7 @@ canvas {
 #project a img {
     height: 300px;
     width: 55vw;
-    min-width: 400px;
+    min-width:95vw;
     opacity: 0.5;
 }
 
