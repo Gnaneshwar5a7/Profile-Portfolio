@@ -389,9 +389,9 @@ canvas {
     background-color: white;
     color: black;
     list-style: none;
-    margin: 10px;
+    margin-right: 10px;
     width:30%;
-    min-width: 150px;
+    min-width: 100px;
     height: 50px;
     border-radius: 5px;
 }
@@ -406,8 +406,7 @@ canvas {
     top: 20px;
     border: 2px aqua solid;
     width: 5%;
-    min-width:12px;
-    margin-right: 5px;
+    min-width:9px;
     margin-bottom: 10px;
 }
 
