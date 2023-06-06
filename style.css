@@ -278,6 +278,7 @@ canvas {
     color: white;
     display: none;
     margin-bottom: 50px;
+    max-width: 99vw;
 }
 
 .Intro{
