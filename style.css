@@ -419,11 +419,12 @@ canvas {
 .projects {
     display: none;
     padding-top: 30px;
+    min-width: 99vw;
 }
 
 .title {
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
     padding: 10px 30px;
 }
 
@@ -456,7 +457,7 @@ canvas {
 
 .project_info {
     padding-left: 20px;
-    font-size: x-large;
+    font-size: larger;
     position: relative;
     top: -280px;
     list-style: inside;
