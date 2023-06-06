@@ -390,7 +390,7 @@ canvas {
     color: black;
     list-style: none;
     margin: 10px;
-    width:20%;
+    width:30%;
     height: 50px;
     border-radius: 5px;
 }
@@ -404,7 +404,7 @@ canvas {
     position: relative;
     top: 20px;
     border: 2px aqua solid;
-    width: 30px;
+    width: 5%;
     margin-right: 5px;
     margin-bottom: 10px;
 }
