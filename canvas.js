@@ -72,6 +72,7 @@ function init() {
     var div1 = document.getElementById('div1');
     var b = document.getElementsByClassName('b');
     var footer = document.getElementById('footer1');
+    var r=document.querySelector(":root");
     if (document.body.clientWidth <= 900) {
         canvas.width = document.body.clientWidth;
         canvas.height = document.body.clientHeight;
@@ -81,7 +82,7 @@ function init() {
         menu.style.display = 'none';
         div1.style.display = 'flex';
         footer.style.flexDirection = 'column';
-
+        r.style.setProperty('--fontsize','10px');
     }
     else {
         for (i = 0; i < 4; i++) {
@@ -90,6 +91,7 @@ function init() {
         menu.style.display = 'flex';
         div1.style.display = 'none';
         footer.style.flexDirection = 'row';
+        r.style.setProperty('--fontsize','20px');
     }
     footer.style.width = document.body.clientWidth;
     circleArray = [];

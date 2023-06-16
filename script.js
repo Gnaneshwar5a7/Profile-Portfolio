@@ -136,13 +136,7 @@ function f44() {
     menu1.style.display = 'none';
     cert.style.display='block';
 }
-// b5.addEventListener('click', function () {
-//     f55();
-// })
 
-// function f55() {
-//     console.log('hello');
-// }
 
 
 b6.addEventListener('click', function () {

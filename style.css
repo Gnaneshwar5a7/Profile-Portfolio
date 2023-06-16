@@ -1,5 +1,9 @@
 /* Header Section(Navigation Bar) */
 
+:root{
+    --fontsize:20px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@
 html {
     display: flex;
     flex-direction: row;
-    background: radial-gradient(#010438,black);
+    background: radial-gradient(#000654,black);
 }
 
 header {
@@ -176,7 +180,7 @@ canvas {
 .wrapper .static-txt {
     margin-top: 20px;
     color: white;
-    font-size: 30px;
+    font-size: calc(var(--fontsize) + 10px);
     font-weight: 400;
     line-height: 60px;
     z-index: 0;
@@ -191,7 +195,7 @@ canvas {
     height: 40px;
     background: transparent;
     overflow: hidden;
-    font-size: 30px;
+    font-size: calc(var(--fontsize) + 10px);
     z-index: 0;
 }
 
@@ -224,7 +228,7 @@ canvas {
     left: 0;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at bottom left,#010330,#010129);
+    background: radial-gradient(circle at bottom left,#000549,#00043f);
     border-left: 3px solid white;
     animation: typing 5s steps(17) infinite;
 }
@@ -258,7 +262,7 @@ canvas {
     width: 23vw;
     height: 5vh;
     color: white;
-    font-size: 2.4vh;
+    /* font-size: calc(var(--fontsize) - 5px); */
     background: radial-gradient(#010438,black);
 }
 
@@ -289,25 +293,25 @@ canvas {
     border-radius: 10px 100px 100px 10px;
 }
 #wishing {
-    padding-top: 20px;
+    padding-top: 10px;
     color: aqua;
-    font-size: x-large;
+    font-size: calc(var(--fontsize) + 5px);
 }
 
 #name {
     color: white;
-    padding-top: 30px;
-    font-size: xx-large;
+    padding-top: 10px;
+    font-size: calc(var(--fontsize) + 20px);
 }
 
 #profession {
     display: inline;
     color: white;
     padding-top: 5px;
-    font-size: x-large;
+    font-size: var(--fontsize);
 }
 #profession span{
-    font-size: large;
+    font-size: calc(var(--fontsize) + 5px);
     display: inline;
 }
 
@@ -315,7 +319,7 @@ canvas {
     color: white;
     padding-top: 25px;
     padding-right: 10px;
-    font-size: large;
+    font-size: calc(var(--fontsize) - 1px);
 }
 
 .Contact {
@@ -337,7 +341,7 @@ canvas {
     height: 40px;
     border: 1px solid aqua;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: calc(var(--fontsize) + 10px);
 }
 
 .about-tmp{
@@ -350,16 +354,16 @@ canvas {
 .about {
     color: antiquewhite;
     padding-top: 10px;
-    font-size: xx-large;
+    font-size: calc(var(--fontsize) + 10px);
 }
 
 .edu {
-    font-size: large;
+    font-size: calc(var(--fontsize) + 0px);
     padding-top: 10px;
 }
 
 .tech {
-    font-size: large;
+    font-size: calc(var(--fontsize) + 0px);
     padding-top: 10px;
 }
 
@@ -424,14 +428,15 @@ canvas {
 
 .title {
     color: white;
-    font-size: x-large;
+    font-size: calc(var(--fontsize) + 15px);
     padding: 10px 30px;
 }
 
 .project{
     border: 2px aqua solid;
-    padding: 10px;
-    margin: 10px;
+    /* padding: 10px; */
+    margin: 20px;
+    border-radius: 20px;
 }
 #project {
     display: flex;
@@ -442,10 +447,9 @@ canvas {
 
 #project a {
     align-self: center;
-    height: 320px;
     text-decoration: none;
     color: aqua;
-
+    height: 250px;
 }
 
 #project a img {
@@ -457,13 +461,17 @@ canvas {
 
 .project_info {
     padding-left: 20px;
-    font-size: larger;
+    font-size: calc(var(--fontsize) + 5px);
     position: relative;
     top: -200px;
     list-style: inside;
 }
-
 .prj:hover{
+    position: relative;
+    top: -2px;
+    box-shadow: 0px 0px 25px 1px aqua;
+}
+.project_info:hover{
     position: relative;
     top: -2px;
     box-shadow: 0px 0px 25px 1px aqua;
@@ -472,8 +480,7 @@ canvas {
 /* footer of the page */
 .footer {
     width: 100vw;
-    /* background: rgb(2, 4, 39); */
-    background: radial-gradient(cirle at top,rgb(13, 14, 43),black);
+    background: rgb(2, 4, 39);
     position: relative;
     z-index: 1;
     color: white;
@@ -492,7 +499,7 @@ canvas {
 }
 
 .contactinfo p {
-    font-size: larger;
+    font-size: calc(var(--fontsize) + 10px);
     padding-bottom: 15px;
     padding-top: 15px;
     color: aqua;
@@ -522,7 +529,7 @@ canvas {
 }
 
 .inforamation p {
-    font-size: larger;
+    font-size: calc(var(--fontsize) + 5px);
     padding-bottom: 15px;
     padding-top: 15px;
     color: aqua;
@@ -549,7 +556,7 @@ canvas {
 }
 
 .Programming p {
-    font-size: larger;
+    font-size: calc(var(--fontsize) + 5px);
     padding-bottom: 15px;
     padding-top: 15px;
     color: aqua;
@@ -571,7 +578,7 @@ canvas {
 }
 
 .Social p {
-    font-size: larger;
+    font-size: calc(var(--fontsize) + 5px);
     padding-bottom: 15px;
     padding-top: 15px;
     color: aqua;
@@ -592,7 +599,7 @@ canvas {
     display: none;
     width: 100vw;
     color: white;
-    font-size:smaller;
+    font-size:calc(var(--fontsize) + 0px);
 }
 
 .container {
