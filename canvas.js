@@ -1,15 +1,5 @@
 var canvas = document.querySelector('canvas');
-canvas.width = document.body.clientWidth;
-canvas.height = document.body.clientHeight;
 var c = canvas.getContext('2d');
-
-
-
-var mouse = {
-    x: undefined,
-    y: undefined
-};
-
 
 var colorArray = ['#66ff66', '#88B04B', '#6B5B95', '#FF6F61', '#34568B', '#ffaa33', '#0076af', '#98aebb', '#ff1100', '#4411aa', 'green', 'blue', 'red', 'white', 'gray', 'pink'];
 
@@ -17,8 +7,6 @@ var colorArray = ['#66ff66', '#88B04B', '#6B5B95', '#FF6F61', '#34568B', '#ffaa3
 
 
 window.addEventListener('resize', function () {
-    canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
     init();
 })
 window.addEventListener('load', function () {
@@ -62,8 +50,8 @@ var circleArray = [];
 for (var i = 0; i < 4000; i++) {
     var x = Math.random() * (innerWidth - r * 2) + r;
     var y = Math.random() * (innerHeight - r * 2) + r;
-    var dx = (Math.random() - 0.5);
-    var dy = (Math.random() - 0.5);
+    var dx = (Math.random() - 0.1);
+    var dy = (Math.random() - 0.1);
     var r = Math.random() * 1 + 0.5;
     circleArray.push(new Circle(x, y, dx, dy, r));
 }
@@ -74,8 +62,11 @@ function init() {
     var footer = document.getElementById('footer1');
     var r=document.querySelector(":root");
     if (document.body.clientWidth <= 900) {
-        canvas.width = document.body.clientWidth;
-        canvas.height = document.body.clientHeight;
+        // canvas.width = document.body.clientWidth;
+        // canvas.height = document.body.clientHeight;
+        var theme=this.document.getElementsByName('theme')[1];
+        console.log(theme.value)
+    changeTheme(theme.value);
         for (i = 0; i < 4; i++) {
             b[i].style.width = '23vw';
         }
@@ -92,6 +83,8 @@ function init() {
         div1.style.display = 'none';
         footer.style.flexDirection = 'row';
         r.style.setProperty('--fontsize','20px');
+        var theme=this.document.getElementsByName('theme')[0];
+        changeTheme(theme.value);
     }
     footer.style.width = document.body.clientWidth;
     circleArray = [];

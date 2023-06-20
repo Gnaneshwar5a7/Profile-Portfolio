@@ -1,7 +1,12 @@
 /* Header Section(Navigation Bar) */
 
-:root{
-    --fontsize:20px;
+:root {
+    --fontsize: 20px;
+    --bgc2: rgb(15, 15, 15);
+    --bgc1: black;
+    --navc: rgb(41, 41, 41);
+    --tc: white;
+    --tc2: gray;
 }
 
 * {
@@ -10,14 +15,19 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+a {
+    text-decoration: none;
+    color: var(--tc);
+}
+
 html {
     display: flex;
     flex-direction: row;
-    background: radial-gradient(#000654,black);
+    background: var(--bgc1);
 }
 
 header {
-    background: rgb(2, 4, 39);
+    background: var(--navc);
     z-index: 2;
     opacity: 1;
     transition: all 0.5s ease 0s;
@@ -61,24 +71,48 @@ header nav ul li {
     flex-direction: row;
     list-style: none;
     align-items: center;
-    /* color: white; */
 }
 
-header nav ul li:hover{
+header nav ul li:hover {
     border-radius: 20px;
-    background: radial-gradient(black,white);
+    background: radial-gradient(var(--bgc1), var(--bgc2));
 }
+
 header nav ul li button {
     background: transparent;
-    color: white;
+    color: var(--tc);
     height: inherit;
     width: 50px;
     border: none;
 }
 
-header nav ul li button:hover {
-    color:aqua;
+header nav ul li a:hover {
+    color: var(--tc2);
     cursor: pointer;
+}
+
+header nav ul li button:hover {
+    color: var(--tc2);
+    cursor: pointer;
+}
+
+select:hover {
+    color: var(--tc2);
+    cursor: pointer;
+}
+
+select {
+    background: transparent;
+    border: none;
+    color: var(--tc);
+    position: relative;
+    left: -10px;
+}
+
+select option {
+    background: var(--bgc1);
+    border: 0px;
+    color: var(--tc);
 }
 
 #div1 {
@@ -95,12 +129,11 @@ header nav ul li button:hover {
     width: 45px;
     border: 0px;
     background: transparent;
-    color: white;
+    color: var(--tc);
 }
 
 #lines1 {
     background: transparent;
-
 }
 
 .menu {
@@ -110,13 +143,13 @@ header nav ul li button:hover {
     justify-content: 10vh;
     padding-left: 5px;
     padding-right: 5px;
-    z-index: 3;
+    z-index: 2;
     position: relative;
 }
 
 .b1 {
     background: transparent;
-    color: gray;
+    color: var(tc);
     height: 40px;
     width: 98vw;
     border-radius: 20px;
@@ -125,6 +158,9 @@ header nav ul li button:hover {
     padding: 10px 20px;
 }
 
+.select{
+    left: 5px;
+}
 
 
 /* DashBoard Page*/
@@ -134,15 +170,21 @@ main {
     min-height: 99vh;
 }
 
+section {
+    min-height: 100vh;
+    width: 100vw;
+}
+
 .background {
     position: absolute;
-
     max-height: 100vh;
 }
 
 canvas {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
 }
 
 .foreground {
@@ -160,26 +202,51 @@ canvas {
 }
 
 .rounded {
+    position: relative;
     height: 140px;
     width: 140px;
     border-radius: 50% !important;
-    border: 2px solid rgb(2, 19, 57);
     display: flex;
     z-index: 1;
+    animation: animate 2s linear;
+    left: 0;
+    top: 0;
+    
+}
+@keyframes animate {
+    0%{
+        transform: rotateZ(-180deg);
+        left: -150px;
+        top: -50px;
+        box-shadow:0px 0px 50px 2px var(--tc);
+    }
+    85%{
+        transform: rotateZ(10deg);
+        left: 0px;
+        top: 0px;
+        box-shadow:0px 0px 7px 2px var(--tc);
+    }
+    100%{
+        transform: rotateZ(0deg);
+        left: 0px;
+        top: 0px;
+        /* border: 2px solid var(--bgc2); */
+    }
+    
 }
 
-.rounded:hover{
-    box-shadow: 0px 0px 100px 0.5px rgb(5, 75, 225);
+.rounded:hover {
+    box-shadow: 0px 0px 100px 0.5px var(--tc);
 }
 
 .wrapper {
-    background:transparent;
+    background: transparent;
     display: flex;
 }
 
 .wrapper .static-txt {
     margin-top: 20px;
-    color: white;
+    color: var(--tc);
     font-size: calc(var(--fontsize) + 10px);
     font-weight: 400;
     line-height: 60px;
@@ -202,7 +269,7 @@ canvas {
 .dynamic-txts li {
     z-index: 0;
     list-style: none;
-    color: white;
+    color: var(--tc);
 
     font-weight: 400;
     top: 0;
@@ -228,7 +295,7 @@ canvas {
     left: 0;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at bottom left,#000549,#00043f);
+    background: var(--bgc1);
     border-left: 3px solid white;
     animation: typing 5s steps(17) infinite;
 }
@@ -257,19 +324,19 @@ canvas {
 }
 
 .links li button {
-    border: 2px solid aqua;
+    border: 2px solid var(--tc2);
     border-radius: 30px;
     width: 23vw;
     height: 5vh;
-    color: white;
+    color: var(--tc);
     /* font-size: calc(var(--fontsize) - 5px); */
-    background: radial-gradient(#010438,black);
+    background: radial-gradient(var(--bgc2), var(--bgc1));
 }
 
 .b:hover {
-    color: black;
-    background:radial-gradient(white,aqua);
-    box-shadow: 0px 0px 25px 1px aqua;
+    color: var(--bgc1);
+    background: radial-gradient(var(--tc2), var(--tc));
+    box-shadow: 0px 0px 25px 1px var(--tc);
     cursor: pointer;
 }
 
@@ -277,46 +344,50 @@ canvas {
 /* About Page */
 .info {
     /* background-color: #010438; */
-    background: transparent;
+    background: var(--bgc2);
     /* padding:0px 8%; */
-    color: white;
-    display: none;
+    color: var(--tc);
+    /* display: none; */
     margin-bottom: 50px;
-    max-width: 99vw;
+    max-width: 100vw;
+    z-index: 2;
+    padding-top: 9vh;
 }
 
-.Intro{
-    border:2px aqua solid;
+.Intro {
+    border: 2px var(--tc2) solid;
     margin: 10px;
     padding: 10px;
     height: fit-content;
     border-radius: 10px 100px 100px 10px;
 }
+
 #wishing {
     padding-top: 10px;
-    color: aqua;
+    color: var(--tc2);
     font-size: calc(var(--fontsize) + 5px);
 }
 
 #name {
-    color: white;
+    color: var(--tc);
     padding-top: 10px;
     font-size: calc(var(--fontsize) + 20px);
 }
 
 #profession {
     display: inline;
-    color: white;
+    color: var(--tc);
     padding-top: 5px;
     font-size: var(--fontsize);
 }
-#profession span{
+
+#profession span {
     font-size: calc(var(--fontsize) + 5px);
     display: inline;
 }
 
 #p1 {
-    color: white;
+    color: var(--tc);
     padding-top: 25px;
     padding-right: 10px;
     font-size: calc(var(--fontsize) - 1px);
@@ -328,31 +399,32 @@ canvas {
 }
 
 #contact:hover {
-    color: black;
-    background:radial-gradient(white,aqua);
-    box-shadow: 0px 0px 25px 1px aqua;
+    color: var(--bgc1);
+    background: radial-gradient(var(--tc2), var(--tc));
+    box-shadow: 0px 0px 25px 1px var(--tc);
     cursor: pointer;
 }
 
 #contact {
-    background: radial-gradient(#010438,black);
-    color: aqua;
+    background: radial-gradient(var(--bgc2), var(--bgc1));
+    color: var(--tc);
     width: 150px;
     height: 40px;
-    border: 1px solid aqua;
+    border: 1px solid var(--tc2);
     border-radius: 10px;
     font-size: calc(var(--fontsize) + 10px);
 }
 
-.about-tmp{
-    border: 2px aqua solid;
-    padding:20px;
+.about-tmp {
+    border: 2px var(--tc2) solid;
+    padding: 20px;
     margin: 10px;
     margin-top: 20px;
-    
+
 }
+
 .about {
-    color: antiquewhite;
+    color: var(--tc);
     padding-top: 10px;
     font-size: calc(var(--fontsize) + 10px);
 }
@@ -372,18 +444,21 @@ canvas {
     padding-top: 30px;
 } */
 
-.t{
-    border: 2px aqua solid;
+.t {
+    border: 2px var(--tc2) solid;
     margin: 10px;
 }
-.t p{
+
+.t p {
     padding: 20px;
 }
-.techs{
+
+.techs {
     display: flex;
     width: 98%;
     justify-content: center;
 }
+
 .list {
     padding: 10px 3%;
 }
@@ -395,23 +470,24 @@ canvas {
     list-style: none;
     margin-right: 10px;
     margin-bottom: 10px;
-    width:20vw;
+    width: 20vw;
     min-width: 100px;
     height: 50px;
     border-radius: 5px;
 }
+
 /* .list li svg{
     position: relative;
     right:-140px;
 } */
 
-.skill{
+.skill {
     display: inline-block;
     position: relative;
     top: 20px;
-    border: 2px aqua solid;
+    border: 2px var(--tc2) solid;
     width: 3vw;
-    min-width:9px;
+    min-width: 9px;
     margin-left: 1%;
     margin-bottom: 10px;
 }
@@ -421,23 +497,24 @@ canvas {
 /* Projects list */
 
 .projects {
-    display: none;
+    /* display: none; */
     padding-top: 30px;
     min-width: 99vw;
 }
 
 .title {
-    color: white;
+    color: var(--tc);
     font-size: calc(var(--fontsize) + 15px);
     padding: 10px 30px;
 }
 
-.project{
-    border: 2px aqua solid;
+.project {
+    border: 2px var(--tc2) solid;
     /* padding: 10px; */
     margin: 20px;
     border-radius: 20px;
 }
+
 #project {
     display: flex;
     flex-direction: column;
@@ -448,7 +525,7 @@ canvas {
 #project a {
     align-self: center;
     text-decoration: none;
-    color: aqua;
+    color: var(--tc2);
     height: 250px;
 }
 
@@ -466,26 +543,27 @@ canvas {
     top: -200px;
     list-style: inside;
 }
-.prj:hover{
+
+.prj:hover {
     position: relative;
     top: -2px;
-    box-shadow: 0px 0px 25px 1px aqua;
+    box-shadow: 0px 0px 25px 1px var(--tc2);
 }
-.project_info:hover{
+
+.project_info:hover {
     position: relative;
     top: -2px;
-    box-shadow: 0px 0px 25px 1px aqua;
+    box-shadow: 0px 0px 25px 1px var(--tc2);
 }
 
 /* footer of the page */
 .footer {
     width: 100vw;
-    background: rgb(2, 4, 39);
+    background: var(--navc);
     position: relative;
     z-index: 1;
-    color: white;
+    color: var(--tc);
     bottom: 0%;
-    border-top: 1px black solid;
 }
 
 #footer1 {
@@ -502,13 +580,13 @@ canvas {
     font-size: calc(var(--fontsize) + 10px);
     padding-bottom: 15px;
     padding-top: 15px;
-    color: aqua;
+    color: var(--tc2);
 }
 
 .contactinfo a {
     padding-bottom: 10px;
     text-decoration: none;
-    color: white;
+    color: var(--tc);
 
 }
 
@@ -532,7 +610,7 @@ canvas {
     font-size: calc(var(--fontsize) + 5px);
     padding-bottom: 15px;
     padding-top: 15px;
-    color: aqua;
+    color: var(--tc2);
 }
 
 .inforamation ul {
@@ -546,7 +624,7 @@ canvas {
 
 .links {
     text-decoration: none;
-    color: white;
+    color: var(--tc);
 }
 
 .Programming {
@@ -559,7 +637,7 @@ canvas {
     font-size: calc(var(--fontsize) + 5px);
     padding-bottom: 15px;
     padding-top: 15px;
-    color: aqua;
+    color: var(--tc2);
 }
 
 .Programming ul {
@@ -581,7 +659,7 @@ canvas {
     font-size: calc(var(--fontsize) + 5px);
     padding-bottom: 15px;
     padding-top: 15px;
-    color: aqua;
+    color: var(--tc2);
 }
 
 .Social ul {
@@ -594,21 +672,23 @@ canvas {
 }
 
 /* Certification page */
-.certifications{
+.certifications {
     position: relative;
-    display: none;
+    /* display: none; */
     width: 100vw;
-    color: white;
-    font-size:calc(var(--fontsize) + 0px);
+    color: var(--tc);
+    font-size: calc(var(--fontsize) + 0px);
+    background-color: var(--bgc2);
+    padding-top: 9vh;
 }
 
 .container {
     padding: 20px;
     padding-right: 35px;
     margin: 10px;
-    background-color:#171a49;
+    background-color: var(--navc);
     width: 70vw;
-height: 50vw;
+    height: 45vw;
     overflow-x: hidden;
     overflow-y: auto;
     border-radius: 5vw;
@@ -618,7 +698,7 @@ height: 50vw;
 .container a img {
     padding: 20px;
     width: 60vw;
-height: 45vw;
+    height: 40vw;
     overflow: hidden;
     border-radius: 15%;
 }
@@ -627,11 +707,11 @@ height: 45vw;
 .certificates {
     padding: 20px;
     margin: 20px;
-    border: #171a49 solid 1px;
+    border: var(--bgc2) solid 1px;
     background: transparent;
 }
 
-.certificates h3{
+.certificates h3 {
     padding: 5px;
 }
 
@@ -639,7 +719,7 @@ height: 45vw;
     position: relative;
     overflow-x: auto;
     display: flex;
-    border:1px aqua solid;
+    border: 1px var(--tc2) solid;
     margin: 5px;
     border-radius: 20px;
 }
@@ -651,6 +731,6 @@ height: 45vw;
     border-radius: 15%;
 }
 
-.horizontal a img:hover{
-    box-shadow: 3px 3px 2px 2px aqua;
+.horizontal a img:hover {
+    box-shadow: 3px 3px 2px 2px var(--tc2);
 }

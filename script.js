@@ -21,12 +21,12 @@
     var Ab = document.getElementsByClassName("info")[0];
     var main = document.getElementsByTagName('main')[0];
     var projects = document.getElementsByClassName('projects')[0];
-    var cert=document.getElementsByClassName('certifications')[0];
+    var cert = document.getElementsByClassName('certifications')[0];
 }
 
 
 // window.addEventListener('load', function () {
-//     init1();
+    
 // });
 // function init1() {
 //     var menu = document.getElementById('menu');
@@ -95,7 +95,7 @@ function f11() {
     main.style.paddingTop = '0vh';
     projects.style.display = 'none';
     menu1.style.display = 'none';
-    cert.style.display='none';
+    cert.style.display = 'none';
 
 }
 b2.addEventListener('click', function () {
@@ -108,7 +108,7 @@ function f22() {
     projects.style.display = 'none';
     main.style.paddingTop = '9vh';
     menu1.style.display = 'none';
-    cert.style.display='none';
+    cert.style.display = 'none';
 }
 b3.addEventListener('click', function () {
     f33();
@@ -121,7 +121,7 @@ function f33() {
     projects.style.display = 'block';
     main.style.paddingTop = '9vh';
     menu1.style.display = 'none';
-    cert.style.display='none';
+    cert.style.display = 'none';
 }
 b4.addEventListener('click', function () {
     f44();
@@ -134,7 +134,7 @@ function f44() {
     projects.style.display = 'none';
     main.style.paddingTop = '9vh';
     menu1.style.display = 'none';
-    cert.style.display='block';
+    cert.style.display = 'block';
 }
 
 
@@ -150,6 +150,47 @@ b7.addEventListener('click', function () {
 b8.addEventListener('click', function () {
     f33();
 })
-b9.addEventListener('click',function(){
+b9.addEventListener('click', function () {
     f44();
 })
+
+
+function changeTheme(theme) {
+    let themeDocs = [
+        {
+            theme: 'dark',
+            bgc1: 'black',
+            bgc2: 'rgb(15, 15, 15)',
+            navc: 'rgb(41, 41, 41)',
+            tc: 'white',
+            tc2: 'gray'
+        },
+        {
+            theme: 'bright',
+            bgc1: 'white',
+            bgc2: 'gray',
+            navc: '#474747',
+            tc: 'black',
+            tc2: 'rgb(41, 41, 41)'
+        },
+        {
+            theme: 'blue/pink',
+            bgc2: '#00539C',
+            bgc1: '#030230',
+            navc: '#080B3C',
+            tc: 'white',
+            tc2: 'aqua'
+        }
+    ]
+    var r=document.querySelector(":root");
+    themeDocs.forEach(t => {
+        console.log(theme,t.theme);
+        if(t.theme===theme){
+            r.style.setProperty('--bgc1',t.bgc1);
+            r.style.setProperty('--bgc2',t.bgc2);
+            r.style.setProperty('--navc',t.navc);
+            r.style.setProperty('--tc',t.tc);
+            r.style.setProperty('--tc2',t.tc2);
+        }
+    });
+}
