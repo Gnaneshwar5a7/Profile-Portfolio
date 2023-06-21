@@ -149,7 +149,7 @@ select option {
 
 .b1 {
     background: transparent;
-    color: var(tc);
+    color: var(--tc);
     height: 40px;
     width: 98vw;
     border-radius: 20px;
@@ -500,11 +500,12 @@ canvas {
     /* display: none; */
     padding-top: 30px;
     min-width: 99vw;
+    text-align: left;
 }
 
 .title {
     color: var(--tc);
-    font-size: calc(var(--fontsize) + 15px);
+    font-size: calc(var(--fontsize) + 10px);
     padding: 10px 30px;
 }
 
@@ -531,7 +532,7 @@ canvas {
 
 #project a img {
     height: 225px;
-    width: 55vw;
+    width: 70vw;
     min-width: 250px;
     opacity: 0.5;
 }
@@ -674,39 +675,121 @@ canvas {
 /* Certification page */
 .certifications {
     position: relative;
-    /* display: none; */
     width: 100vw;
     color: var(--tc);
     font-size: calc(var(--fontsize) + 0px);
     background-color: var(--bgc2);
-    padding-top: 9vh;
+    padding-top: 7vh;
 }
 
 .container {
-    padding: 20px;
+    max-height: 52vh;
+    padding: 1vw;
     padding-right: 35px;
     margin: 10px;
     background-color: var(--navc);
-    width: 70vw;
-    height: 45vw;
+    width: 65vw;
+    height: 42vw;
     overflow-x: hidden;
     overflow-y: auto;
     border-radius: 5vw;
+    display: flex;
+    flex-direction: row;
 }
 
+.container a{
+    height: fit-content;
+}
 
 .container a img {
-    padding: 20px;
+    max-height: 50vh;
+    padding: 2vw;
     width: 60vw;
     height: 40vw;
     overflow: hidden;
-    border-radius: 15%;
+    border-radius: 5%;
+    position: relative;
+    left: 0;
+    top: -1vw;
+    animation: float 25s linear infinite;
+}
+@keyframes float{
+    0%{
+        left: 0;
+        
+    }
+    5%{
+        left: 0;
+    }
+    10%{
+        left:calc( 63vw * -1 );
+    }
+    15%{
+        left: calc( 63vw * -1 );
+    }
+    20%{
+        left: calc( 63vw * -2 );
+    }
+    25%{
+        left: calc( 63vw * -2 );
+    }
+    30%{
+        left: calc( 63vw * -3 );
+    }
+    35%{
+        left: calc( 63vw * -3 );
+    }
+    40%{
+        left: calc( 63vw * -4 );
+    }
+    45%{
+        left: calc( 63vw * -4 );
+    }
+    50%{
+        left: calc( 63vw * -3 );
+    }
+    55%{
+        left: calc( 63vw * -3 );
+    }
+    60%{
+        left: calc( 63vw * -2 );
+    }
+    65%{
+        left: calc( 63vw * -2 );
+    }
+    70%{
+        left: calc( 63vw * -1 );
+    }
+    75%{
+        left: calc( 63vw * -1 );
+    }
+    80%{
+        left: calc( 63vw * -0 );
+    }
+    85%{
+        left: calc( 63vw * -0 );
+    }
+    90%{
+        left: calc( 63vw * -1 );
+    }
+    95%{
+        left: calc( 63vw * -1 );
+    }
+    100%{
+        left: calc( 63vw * 0 );
+    }
+    /* 50%{
+        left: calc( 62vw * -5 );
+    }
+    51%{
+        left: calc( 62vw * -5 );
+    } */
 }
 
 
 .certificates {
-    padding: 20px;
-    margin: 20px;
+    padding: 1vw;
+    margin: 1vw;
     border: var(--bgc2) solid 1px;
     background: transparent;
 }
@@ -732,5 +815,5 @@ canvas {
 }
 
 .horizontal a img:hover {
-    box-shadow: 3px 3px 2px 2px var(--tc2);
+    box-shadow: 0px 0px 20px 2px var(--tc2);
 }
