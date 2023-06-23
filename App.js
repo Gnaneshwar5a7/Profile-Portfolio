@@ -24,7 +24,7 @@ App.engine('.html', require('ejs').renderFile);
 
 App.get("/",async (req,res)=>{
     var data =await db.collection('views').findOne();
-    var x=await db.collection('views').updateOne({},{$set:{'views':data.views+1}});
+    await db.collection('views').updateOne({},{$set:{'views':data.views+1}});
     data= await db.collection('views').findOne({});
     console.log(data);
     res.render('index.html',{count:data.views});
