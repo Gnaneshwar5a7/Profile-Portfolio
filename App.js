@@ -1,13 +1,13 @@
 const express= require("express");
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const path = require('path');
+require('dotenv').config();
 const App=express()
 App.use(express.static('public'))
 
 
 
 
-const uri = env.process.MONGODB_URI;
+const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
