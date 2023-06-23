@@ -7,6 +7,9 @@ window.addEventListener('resize', function () {
     init();
 })
 window.addEventListener('load', function () {
+
+    console.log("hello");
+
     init();
 });
 
