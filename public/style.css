@@ -544,7 +544,9 @@ canvas {
     min-width: 99vw;
     text-align: left;
 }
-
+.projects h1{
+    top:5vh;
+}
 .title {
     color: var(--tc);
     font-size: calc(var(--fontsize) + 10px);
